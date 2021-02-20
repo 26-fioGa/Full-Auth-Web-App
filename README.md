@@ -1,4 +1,4 @@
-# Full-Auth-Web
+# Full-Auth-Web-App
 
 Demo Link: https://fgc-full-auth.herokuapp.com/
 
