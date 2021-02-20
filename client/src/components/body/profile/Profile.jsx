@@ -80,7 +80,7 @@ function Profile() {
                 headers: {Authorization: token}
             })
 
-            setData({...data, err:'' , success:"Profile Updated Successfully!"})
+            setData({...data, err:'' , success:"Profile Updated Successfully. Reload The Page, Please!"})
         } catch (err) {
             setData({...data, err: err.response.data.msg , success:''})
         }
@@ -175,7 +175,9 @@ function Profile() {
                 <h2> {isAdmin ? "Users" : "My Stuff"} </h2>
                 <div style={{overflowX: "auto"}} >
                     <table className="customers">
-                        <thead>
+                        
+                    {isAdmin ? 
+                        <thead >
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
@@ -183,7 +185,10 @@ function Profile() {
                                 <th>Admin</th>
                                 <th>Action</th>
                             </tr>
-                        </thead>
+                        </thead> 
+                    : <p>Hello {user.name} , how you doing? <br/>
+                        More functionalities are coming soon...</p>  }
+                        
 
                         <tbody>
                             {
