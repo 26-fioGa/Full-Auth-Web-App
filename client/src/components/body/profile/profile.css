@@ -1,0 +1,290 @@
+/* ---Col Left--- */
+
+.profile_page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile_page .col-left {
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.profile_page .col-left .avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border: 1px solid #4E534D;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile_page .col-left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.profile_page .col-left .avatar span {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(200, 191, 178, .6);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.profile_page .col-left .avatar:hover span {
+    bottom: -15%;
+}
+
+.profile_page .col-left #file_up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.profile_page .col-left h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 1.8px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.profile_page .col-left label {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+.profile_page .col-left input {
+    width: 100%;
+    height: 38px;
+    margin: 10px 0;
+    outline: none;
+    padding: 0 10px;
+    background-color: #DBD3C8;
+    border-color: #DBD3C8;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px #d6cece, inset -5px -5px 10px #fff2f288;
+}
+
+.profile_page .col-left button {
+    width: 150px;
+    padding: 10px 0;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.profile_page .col-left button:hover {
+    background-color: #4E534D;
+    color: #E4D986;
+}
+
+
+/* ---Col Right--- */
+
+.profile_page .col-right {
+    padding: 0 10px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile_page .col-right h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 1.8px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+
+/* ---Table--- */
+
+.customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customers td,
+.customers th {
+    border-bottom: 1px solid #d3ccc2;
+    padding: 8px;
+    min-width: 100px;
+}
+
+.customers tr {
+    background-color: #e2dbd3;
+}
+
+.customers tr:nth-child(even) {
+    background-color: #c8bfb2;
+}
+
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: #DBD3C8;
+    color: black;
+    border-bottom: 1px solid #4E534D;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.customers i {
+    cursor: pointer
+}
+
+.customers .fa-check {
+    color: #656b64;
+}
+
+.customers .fa-times {
+    color: #656b64;
+}
+
+.customers .fa-edit {
+    background-color: transparent;
+    padding: 7px;
+    color: rgb(12, 97, 37);
+    font-size: 14px;
+}
+
+.customers .fa-trash-alt {
+    background-color: transparent;
+    padding: 7px;
+    color: rgb(160, 12, 12);
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.customers .fa-edit:hover {
+    color: rgb(4, 161, 4);
+}
+
+.customers .fa-trash-alt:hover {
+    color: red;
+}
+
+
+/* ---Edit User--- */
+
+.edit_user {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit_user .col-left {
+    max-width: 500px;
+    min-width: 400px;
+    padding: 0 1rem;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(42, 44, 42, 0.288);
+}
+
+.edit_user .col-left h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+    letter-spacing: 1.8px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.edit_user .col-left label {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+.edit_user .col-left .input {
+    width: 100%;
+    height: 38px;
+    margin: 10px 0;
+    outline: none;
+    padding: 0 10px;
+    background-color: #DBD3C8;
+    border-color: #DBD3C8;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px #d6cece, inset -5px -5px 10px #fff2f288;
+}
+
+.edit_user .col-left .update {
+    width: 180px;
+    padding: 10px 0;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.edit_user .col-left .update:hover {
+    background-color: #4E534D;
+    color: #E4D986;
+}
+
+.edit_user .col-left .check {
+    background-color: #DBD3C8;
+    width: 20px;
+    height: 20px;
+    transform: translateY(3px);
+    margin: 10px 0;
+}
+
+.edit_user .col-left .check+label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.edit_user .go_back {
+    width: 150px;
+    padding: 10px 0;
+    color: black;
+    background-color: #DBD3C8;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.edit_user .go_back:hover {
+    background-color: #c8bfb2;
+}
