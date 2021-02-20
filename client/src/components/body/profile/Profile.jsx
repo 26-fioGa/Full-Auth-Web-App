@@ -94,7 +94,7 @@ function Profile() {
             return setData({...data, err: "Password did not match.", success: ''})
 
         try {
-            axios.patch('/user/reset', {password}, {
+            axios.post('/user/reset', {password}, {
                 headers: {Authorization: token}
             })
 
@@ -106,7 +106,7 @@ function Profile() {
 
     const handleUpdate = () => {
         if(name || avatar) updateInfor()
-        if(password) updatePassword()
+        if(password) updatePassword(password)
     }
 
     const handleDelete = async (id) => {
